@@ -1,11 +1,12 @@
 
 
+/* Global Font and Layout */
 body {
   font-family: "Segoe UI", sans-serif;
-  max-width: 900px;
   margin: auto;
   padding: 0 20px;
   background-color: #f9f9f9;
+  color: #222;
 }
 
 /* Navigation Bar Styling */
@@ -27,21 +28,25 @@ nav a {
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  color: #003366;
+  color: #003366;#
 }
 
 nav a:hover {
   background-color: #e0f0ff;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: background-color 0.2s ease;
 }
 
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+/* Main Content Area */
 main {
   margin-top: 40px;
 }
 
+/* Research/Teaching List Layouts */
 .minipage-row {
   display: flex;
   justify-content: space-between;
@@ -52,6 +57,33 @@ main {
 .minipage-left {
   width: calc(100% - 160px); /* wide left column */
 }
+
+.minipage-right {
+  width: 140px; /* fixed narrow column */
+  text-align: right;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.talk-title {
+  font-style: italic;
+}
+
+.conf-title {
+  font-weight: 600;
+}
+
+/* General Link Styling */
+a, a:visited {
+  text-decoration: none !important;
+  color: #1E90FF; /* Dodger Blue */
+}
+
+a:hover, a:focus {
+  color: #003366;
+  text-decoration: none !important;
+}
+
 
 .minipage-right {
   width: 140px; /* fixed narrow column */
@@ -89,5 +121,34 @@ a:hover, a:focus {
 nav a {
     font-weight: bold;
     margin-right: 20px;
+}
+
+h2 {
+  color: #003366;           /* Dark blue or any color you prefer */
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  white-space: normal;      /* Ensures it wraps */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  overflow-x: hidden;  /* Avoids horizontal scroll shifting layout */
+}
+
+body {
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  overflow-x: hidden;
 }
 

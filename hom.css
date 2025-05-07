@@ -6,12 +6,15 @@
   margin-bottom: 20px;
 }
 
+
 nav {
-  background: linear-gradient(to right, #eaeaea, #e6f0ff); /* gray to blue gradient */
+  background: linear-gradient(to right, #eaeaea, #e6f0ff); /* example gradient */
   border-radius: 10px;
-  padding: 20px 0px;
+  padding: 20px 0;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 nav a {
@@ -19,7 +22,8 @@ nav a {
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  color: #003366;#
+  color: #003366;
+  display: inline-block;
 }
 
 nav a:hover {
@@ -159,4 +163,26 @@ nav a {
     font-weight: bold;
     margin-right: 20px;
 }
+.right-column {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 
+.profile-photo {
+  width: 180px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.contact-box {
+  font-size: 14px;
+  text-align: left;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
