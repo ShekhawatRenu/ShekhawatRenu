@@ -1,16 +1,47 @@
-/* Top Navigation Bar */
+
+
+/* Navigation Bar Styling */
 .top-bar {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+nav {
+  background: linear-gradient(to right, #eaeaea, #e6f0ff); /* gray to blue gradient */
+  border-radius: 10px;
+  padding: 20px 0px;
   text-align: center;
-  padding: 15px 0;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 25px;
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #003366;#
+}
+
+nav a:hover {
+  background-color: #e0f0ff;
+}
+
+
+
+.photo img {
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+main {
+  margin-top: 40px;
+}
+
+.minipage-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
 }
 
 /* Two-column layout */
@@ -29,8 +60,12 @@ nav a {
 }
 
 .right-column {
-  flex: 0 0 200px; /* fixed width column for photo */
+  flex: 0 0 200px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 40px; /* adjust this to shift the photo down */
 }
+
 
 .left-column h1 {
   font-size: 36px;
@@ -49,4 +84,79 @@ nav a {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Two-column layout */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 0 0 200px;
+}
+
+.left-column h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.bio {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Remove underline and set link color for all links */
+a, a:visited {
+    text-decoration: none !important;
+    color: 	#1E90FF;
+}
+
+/* Change color on hover */
+a:hover, a:focus {
+    color: #003366;
+    text-decoration: none !important;
+}
+
+/* Style nav links (optional, reinforces look) */
+nav a {
+    font-weight: bold;
+    margin-right: 20px;
+}
 

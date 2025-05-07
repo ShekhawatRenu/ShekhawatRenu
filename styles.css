@@ -6,37 +6,35 @@ body {
   background-color: #f9f9f9;
 }
 
+/* Navigation Bar Styling */
 .top-bar {
-  position: relative;
-  height: 100px;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 nav {
-  text-align: center;
+  background: linear-gradient(to right, #eaeaea, #e6f0ff); /* gray to blue gradient */
+  border-radius: 10px;
   padding: 20px 0;
-  font-size: 18px;
-  background-color: #eaeaea;
-  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 nav a {
-  margin: 0 20px;
+  margin: 0 25px;
+  font-size: 20px;
+  font-weight: 600;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #003366;
 }
 
-.photo {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+nav a:hover {
+  background-color: #e0f0ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
 }
 
-.photo img {
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
 
 main {
   margin-top: 40px;
@@ -66,5 +64,28 @@ main {
 
 .conf-title {
   font-weight: 600;
+}
+
+a {
+    text-decoration: none;        /* removes underline */
+    color: #0055aa;               /* custom link color */
+}
+
+  /* Remove underline and set link color for all links */
+a, a:visited {
+    text-decoration: none !important;
+    color: 	#1E90FF;
+}
+
+/* Change color on hover */
+a:hover, a:focus {
+    color: #003366;
+    text-decoration: none !important;
+}
+
+/* Style nav links (optional, reinforces look) */
+nav a {
+    font-weight: bold;
+    margin-right: 20px;
 }
 
