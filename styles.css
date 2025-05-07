@@ -23,16 +23,27 @@ nav {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* Default nav link */
 nav a {
+  color: #1E90FF; /* light blue */
+  text-decoration: none;
   margin: 0 25px;
   font-size: 20px;
   font-weight: 600;
-  text-decoration: none;
-  color: #003366;#
+  padding: 6px 10px;
+  border-radius: 6px;
 }
 
+/* Hover effect */
 nav a:hover {
   background-color: #e0f0ff;
+}
+
+/* Active (current) page */
+nav a.active {
+  color: #003366; /* navy blue */
+  font-weight: bold;
+  text-decoration: none; /* no underline */
 }
 
 .wrapper {
@@ -150,5 +161,15 @@ body {
 
 .main-container {
   overflow-x: hidden;
+}
+
+/* Reset all nav link states to consistent navy blue */
+
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  color: #003366;
+  text-decoration: none;
 }
 
