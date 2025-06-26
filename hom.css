@@ -1,5 +1,3 @@
-
-
 /* Navigation Bar Styling */
 .top-bar {
   margin-top: 30px;
@@ -209,3 +207,37 @@ nav a:active {
   text-decoration: none;
 }
 
+/* Viewport Meta Tag (to be included in HTML <head>) */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+/* Adaptive font sizing */
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive container to preserve desktop layout but adapt to mobile */
+.wrapper, .main-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+.bio, .minipage-left, .minipage-right, p, li {
+  font-size: 16px;
+  line-height: 1.6;
+}

@@ -173,3 +173,8 @@ nav a:active {
   text-decoration: none;
 }
 
+
+.minipage-left, .minipage-right, p, li, div {
+  font-size: 16px !important;
+  line-height: 1.6;
+}
