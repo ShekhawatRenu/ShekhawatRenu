@@ -231,7 +231,23 @@ nav a:active {
 html, body {
   height: 100%;
   margin: 0;
+  overflow: hidden; /* prevents scrollbars during scaling */
 }
+
+.scale-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scale-content {
+  width: 1920px;  /* your "design width" */
+  height: 1080px; /* your "design height" */
+  transform-origin: top left;
+}
+
 
 body {
   display: flex;
