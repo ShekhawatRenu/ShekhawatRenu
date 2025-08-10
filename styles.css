@@ -1,0 +1,281 @@
+/* Global Font and Layout */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  background-color: #f9f9f9;
+  color: #222;
+  height: 100%;
+  overflow-x: hidden; /* no horizontal scroll */
+}
+
+.site-wrapper {
+  width: 1200px; /* your fixed design width */
+  transform-origin: top center;
+}
+
+/* Scale down if viewport is narrower than design width */
+@media screen and (max-width: 1200px) {
+  .site-wrapper {
+    transform: scale(calc(100vw / 1200));
+  }
+}
+
+/* Navigation Bar Styling */
+.top-bar {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+
+nav {
+  background: linear-gradient(to right, #eaeaea, #e6f0ff); /* gray to blue gradient */
+  border-radius: 10px;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Default nav link */
+nav a {
+  color: #1E90FF; /* light blue */
+  text-decoration: none;
+  margin: 0 50px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #e0f0ff;
+}
+
+/* Active (current) page */
+nav a.active {
+  color: #003366; /* navy blue */
+  font-weight: bold;
+  text-decoration: none; /* no underline */
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wrapper {
+  flex: 1;  /* pushes footer down */
+  max-width: 1000px; /* keep content centered */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Main two-column layout */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Main Content Area */
+main {
+  margin-top: 40px;
+}
+
+/* Research/Teaching List Layouts */
+.minipage-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.minipage-left {
+  width: calc(100% - 160px); /* wide left column */
+}
+
+.minipage-right {
+  width: 300px; /* fixed narrow column */
+  text-align: right;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.talk-title {
+  font-style: italic;
+}
+
+.conf-title {
+  font-weight: 600;
+}
+
+/* General Link Styling */
+a, a:visited {
+  text-decoration: none !important;
+  color: #1E90FF; /* Dodger Blue */
+}
+
+a:hover, a:focus {
+  color: #003366;
+  text-decoration: none !important;
+}
+
+a {
+    text-decoration: none;        /* removes underline */
+    color: #0055aa;               /* custom link color */
+}
+
+  /* Remove underline and set link color for all links */
+a, a:visited {
+    text-decoration: none !important;
+    color: 	#1E90FF;
+}
+
+/* Change color on hover */
+a:hover, a:focus {
+    color: #003366;
+    text-decoration: none !important;
+}
+
+/* Style nav links (optional, reinforces look) */
+nav a {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+h2 {
+  color: #003366;           /* Dark blue or any color you prefer */
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  white-space: normal;      /* Ensures it wraps */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Reset all nav link states to consistent navy blue */
+
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+  color: #003366;
+  text-decoration: none;
+}
+
+.minipage-left, .minipage-right, p, li, div {
+  font-size: 16px !important;
+  line-height: 1.6;
+}
+
+.two-column {
+  padding-right: 220px;
+  display: flex;
+  flex-direction: row;     /* bio on left, photo on right */
+  align-items: flex-start; /* align tops */
+  position: relative;
+}
+
+
+.left-column {
+  padding-right: 220px;
+  flex: ;
+}
+
+.right-column {
+  display: flex;
+  justify-content: flex-start; /* keep image at top */
+  align-items: flex-start;     /* align to left edge of right column */
+}
+
+
+.profile-photo {
+  position: absolute;
+  top: 30px;
+  bottom: 50px;
+  right: 10px;
+  transform: translateY(0); /* no upward shift */
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column; /* stack for mobile */
+    align-items: center;
+  }
+}
+
+
+/* Make the body take full height and use flex layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Footer Styling - matches nav bar */
+.page-footer {
+  background: linear-gradient(to right, #eaeaea, #e6f0ff);
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between; /* left and right footer content */
+  align-items: center;
+  max-width: 1000px; /* match wrapper width */
+  margin: 20px auto 0 auto; /* center footer horizontally */
+  box-sizing: border-box;
+}
+
+/* Footer text colors */
+.page-footer,
+.page-footer a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.page-footer a:hover {
+  color: #1E90FF;
+}
+
+.footer-left {
+  flex: 0 0 60%; /* takes 60% width */
+}
+
+.footer-right {
+  flex: 0 0 40%; /* takes 40% width */
+  text-align: right;
+}
+.wrapper, main, p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+
