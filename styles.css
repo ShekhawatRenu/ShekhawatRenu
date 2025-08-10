@@ -231,7 +231,8 @@ nav a:active {
 html, body {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* prevents scrollbars during scaling */
+  overflow-x: auto; /* horizontal scrollbars during scaling */
+  overflow-y: auto; /* vertical scrollbars during scaling */
 }
 
 .scale-wrapper {
