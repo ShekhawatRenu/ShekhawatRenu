@@ -27,6 +27,11 @@ body {
   margin-bottom: 20px;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 
 nav {
   background: linear-gradient(to right, #eaeaea, #e6f0ff); /* gray to blue gradient */
