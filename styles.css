@@ -23,7 +23,7 @@ body {
 
 /* Navigation Bar Styling */
 .top-bar {
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -253,6 +253,10 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+}
+
+.full-height {
+  min-height: 100vh; /* fills the entire screen height */
 }
 
 
