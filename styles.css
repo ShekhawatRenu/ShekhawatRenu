@@ -305,4 +305,23 @@ body {
   word-break: break-word;
 }
 
+.pub-list {
+  margin-left: 20px;       /* natural ordered list indentation */
+  padding-left: 20px;
+}
+
+.pub-entry {
+  display: flex;
+  justify-content: space-between;  /* pushes arXiv link to the right */
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.pub-entry a {
+  white-space: nowrap;     /* keep [arXiv] on one line */
+}
+
+.pub-list li {
+  margin-bottom: 1em;      /* spacing between entries */
+}
 
