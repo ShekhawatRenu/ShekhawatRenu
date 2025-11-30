@@ -312,16 +312,16 @@ body {
 
 .pub-entry {
   display: flex;
-  justify-content: space-between;  /* pushes arXiv link to the right */
+  width: 100%;
   align-items: flex-start;
-  gap: 10px;
+}
+
+.pub-entry span {
+  flex: 1;
 }
 
 .pub-entry a {
-  white-space: nowrap;     /* keep [arXiv] on one line */
-}
-
-.pub-list li {
-  margin-bottom: 1em;      /* spacing between entries */
+  margin-left: 20px;
+  white-space: nowrap;
 }
 
